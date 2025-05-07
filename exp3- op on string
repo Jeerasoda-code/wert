@@ -31,3 +31,93 @@ const string = document.getElementById("inputstring").value;
 const result=reverseString(string);
 document.getElementById("result").innerHTML=result;
 }
+
+2}-
+//index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reverse String</title>
+<script src="script.js" defer></script>
+</head>
+<body>
+<h2>Reverse a String</h2>
+<label for="inputString">Enter a string: </label>
+<input type="text" id="inputString" placeholder="Enter text here">
+<button onclick="reverseString()">Reverse</button>
+<h3>Reversed String:</h3>
+<p id="result"></p>
+</body>
+</html>
+//Script.is
+function reverseString() (
+const input document.getElementById('inputString").value;
+const lengthOfString input.length;
+console.log('Length of the string:', lengthOfString);
+let reversedString ";
+for (let i lengthOfString 17 i > 071--) (
+reversedString + Input[1]:
+}
+document.getElementById('result').textContent reversedString;
+}
+
+3]-
+
+//index.html
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-
+
+scale=1.0">
+
+<title>String Character Replacement</title>
+
+<script src="script.js" defer></script> <!-- Link to the external
+
+JS file -->
+
+</head>
+
+<body>
+
+<h1>String Character Replacement</h1>
+
+<button onclick="replaceCharacter()">Replace Character</button>
+
+</body>
+
+</html>
+
+//script.js
+
+function replaceCharacter() (
+
+// Original string
+
+const originalString Mr. Red has a red house and a red car';
+
+// Use prompt to get the character to replace and the new character from the user
+
+const charToReplace replace:", "zed"); prompt ("Enter the character you want to
+
+const newChar prompt ("Enter the new character:", "blue");
+
+// Replace the character
+
+const newText originalString.replace(charToReplace, newChar);
+// Log the result to the console
+console.log("Original String:
+originalString);
+console.log("Modified String:
+newText);
+}
+// Call the function
+replaceCharacter();
+
