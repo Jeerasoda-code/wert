@@ -1,0 +1,46 @@
+index . html
+< ! DOCTYPE html >
+<html 
+<head>
+< title>Object to Array</title>
+< script src="script.js" defer></script> < ! — Link to the JavaScript file -->
+</head>
+<body>
+ <h1>object to Array</hl>
+< label for="fieldl ">Fie1d l:</label>
+< input type="text" id=" field 1" placeholder="Enter field name"><br>
+< label for="Va1ue 1 ">value1:</label>
+< input  type="text" id="value1" placeholder="Enter field value"><br>
+< label  for="Fie1d 2" >Field 2:</label>
+< input type="text" id=" field2" placeholder="Enter field name"><br>
+ < label for="Va1ue 2 ">value2:</label>
+< input type="text" id="vaIue2" placeholder="Enter field value"><br>
+<button id="createObjectBtn">Create Object and Add to Array</button>
+<div  id="output"></div>
+</body>
+< / html >
+
+//script . is
+let obj ectArray =[];
+// Array to hold objects
+document . getElementById ( ' createObj ectBtn ' ) .addEventListener ( ' click' ,()=> {
+// Read input values
+const	field 1   =	document . getEIementById ( ' field 1 ' ) . value;
+const	valuel  = 	document . getEIementById ( 'valuel ' ) . value;
+const	field2  = 	document . getEIementById ( ' field2 ' ) . value;
+const	value2 =  	document . getEIementById ( 'value2 ' ) . value;
+// Create an object with the input values 
+const newObject ={
+[field 1] : value 1,
+[field2] : value2,
+}:
+// Add object to the array 
+objectArray . push (newObj ect) ;
+// Display the array
+const outputDiv = document . get Element Byld( ' output' ) ;
+	outputDiv . innerHTML=	'Array of Objects:
+$ {JSON . stringify (objectArray) } 
+// Check if the variable is an array
+const isArray = Array. isArray (objectArray) ;
+outputDiv. innerHTML +=' <br>ls objectArray an array? $ {isArray}';
+});
