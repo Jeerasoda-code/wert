@@ -1,0 +1,54 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>String Comparison</title>
+</head>
+<body>
+<h1>String Comparison</h1>
+<label for-"string1">String 1:</label>
+<input type="text" id="string1" value="JavaScript Program"><br><br>
+<label for="string2">String 2:</label>
+<input type="text" id="string2" value="javascript program"><br><br>
+<button onclick="compareStrings()">Compare Stringa</button>
+<h2>Result:</h2>
+<p id="result"></p>
+<script src="script.js"></script>
+</body>
+</html>
+
+//script.js
+
+1.function compareStrings ()
+// Get input value
+const stringi const string2 document.getElementById('string').value; document.getElementById('string2').valuer
+// Create regex for comparison.
+const pattern = new RegExp(string1, "gi");
+// Compare the stringa
+const result pattern.test(string2);
+// Display the result on the page
+const resultText result
+? 'The strings are similar.'
+:'The strings are not similar.';
+document.getElementById('result').innerHTML resultText;
+}
+2. function compareStrings() (
+// Get input values.
+const stringi document.getElementById('stringi').value;
+const string2 document.getElementById('string2').value;
+// Compare both strings using toUpperCase()
+const result stringl.toUpperCase() string2.toUpperCase();
+// Display the result on the page
+const resultText result ? 'The strings are similar.'
+'The strings are not similar.';
+document.getElementById('result').innerHTML resultText;
+}
+3. function compareStrings() ( // Get input values
+const stringi document.getElementById('string').value; const string2 document.getElementById('string2').value;
+// Compare using localeCompare for case insensitive comparison stringl.localeCompare (string2, undefined, (sensitivity:
+const result 'base'));
+// Display the result on the page
+const resultText result ==0 ? 'The strings are similar."
+'The strings are not similar.'
+document.getElementById('result').innerHTML resultText
