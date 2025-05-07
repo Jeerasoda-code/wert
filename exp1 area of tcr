@@ -1,0 +1,72 @@
+Area of triangle-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Triangle Area Calculator</title>
+</head>
+<body>
+<label for="base">Base:</label>
+<input type="number" id="base"><br><br>
+<label for="height">Height:</label>
+<input type="number" id="height"><br><br>
+<button onclick="calculateArea()">Calculate Area</button>
+<p id="result"></p>
+<script>
+function calculateArea() {
+var base prompt("Enter the base of the triangle:", "0");
+var height prompt("Enter the height of the triangle:", "0");
+var area (base * height)/2;
+document.getElementById("result").innerHTML = "The area of the triangle is " + area; }
+</script>
+</body>
+</html>
+</html>
+
+area of rectangle-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rectangle Area Calculator</title>
+</head>
+<body>
+<label for="length">length:</label>
+<input type="number" id="length"><br><br>
+<label for=" width">Height:</label>
+<input type="number" id="width"><br><br>
+<button onclick="calculateArea()">Calculate Area</button>
+<p id="result"></p>
+<script>
+function calculateArea() {
+var length = prompt("Enter the length of the rectangle:", "0");
+var width prompt("Enter the width of the rectangle:", "0");
+var area length * width;
+document.getElementById("result").innerHTML = "The area of the rectangle is "+ area:
+</script>
+</body>
+</html>
+</html>
+
+Area of circle-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circle Area Calculator</title>
+</head>
+<body>
+<h1>Circle Area Calculator</h1>
+<label for="radius">Radius:</label>
+<input type="number" id="radius"><br><br>
+<button onclick="calculateArea()">Calculate Area</button>
+<p id="result"></p>
+<script>
+function calculateArea() {
+var radius prompt("Enter the radius of the circle:", "0");
+var area Math.PI radius radius:
+document.getElementById("result").innerHTML = "The area of the circle is: "+ area.toFixed(2);
+}
+</script>
+</body>
+</html>
