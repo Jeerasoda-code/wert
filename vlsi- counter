@@ -29,3 +29,62 @@ end if;
 end process;
 Q <= TEMP_Q;
 end counter_arch;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY counter_tb IS
+END counter_tb;
+
+ARCHITECTURE behavior Of counter_tb IS
+
+--Component Declaration for the Unit Under Test (UUT)
+
+COMPONENT counter
+PORT(
+CLK :IN std_logic;
+RST IN std_logic; 
+Q: OUT std_logic_vector(3 downto 0)
+);
+END COMPONENT;
+
+--Inputs
+signal CLK: std_logic := '0';
+signal RST: std_logic := '0';
+
+--Outputs
+signal Q: std_logic_vector(3 downto 0);
+
+--Clock period definitions
+BEGIN
+
+-- Instantiate the Unit Under Test (UUT)
+uut: counter PORT MAP(
+CLK => CLK,
+RST => RST,
+Q => Q
+);
+
+--Clock process definitions
+CLK_process : process
+begin
+CLK <= '0';
+wait for 5 ns; 
+CLK <= '1';
+wait for 5 ns;
+end process;
+
+--Stimulus process
+stim_proc: process
+begin
+--hold reset state for 100 ns.
+
+RST<='1';
+wait for 20 ns;
+RST <= '0';
+wait for 200 ns;
+RST <= '1';
+wait for 10 ns;
+RST <= '0';
+wait for 300 ns;
+end process;
+END;
