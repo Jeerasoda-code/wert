@@ -1,0 +1,25 @@
+index . html
+< ! DOCTYPE html >
+<html 
+<head>
+< title>Countdown Timer</title>
+</head>
+ <body>
+<h1>Countdown Timer</hl>
+<p id=" 
+ < script src="script.js"></script>
+</body>
+< / html >
+script . j s
+// Time to countdown from (in milliseconds) let countDownDate new Date ( ) . get Time () + 24 1000;
+// Countdown timer let x set Interval (function ( )  
+// Get today's date and time in milliseconds let now — new Date ( ) . get Time ( ) ;
+// Find the interval between now and the countdown time
+	let timeLeft	countDownDate	now ;
+// Time calculations for days, hours, minutes, and seconds const days = Math. floor (timeLeft / (1000 * 60  const hours = Math. floor ( (timeLeft / (1000 * 60 * 60) )  const minutes Math. floor ( (timeLeft / 1000 / 60)  const seconds Math. floor ( (timeLeft / 1000) 
+// Display the result in the element with id="timerDisp1ay" document . getEIementById ( "timer Display") . innerHTML 
+	days + "d " + hours + "h	+ minutes + "m	seconds	' s 
+// Clearing countdown when complete if (timeLeft < 0)  clear Interval (x) •
+	document . getEIementById ( "timer Display	. innerHTML	" Countdown
+Finished" ;
+  1000 ) ;
