@@ -10,8 +10,8 @@ index.html
 <h1>Multiplication Table Generator</h1>
 <label for="number">Enter a number</label>
 <input type="number" id="number" required><br><br>
-<button onclick="generate Table()">Generate Table</button>
-<h2>Multiplication Table:</h2>
+<button onclick="reverseInputString()">Generate Table</button>
+<h2>reversed string</h2>
 <p id="result"></p>
 
 </body>
@@ -20,7 +20,7 @@ index.html
 
 //script.js
 
-function generateTable() {
+function reverseString() {
 let newString ="";
 for(let i=str.length -1; i>=0; i--){
 newString += str[i];
