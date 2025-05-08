@@ -26,7 +26,7 @@ var table"";
 // Using a for loop to generate the multiplication table
 for (var i=1; i <= 10; i++) {
 var result number i:
-table + ${number} x S[i] = S[result}<br>";
+table + ${number} x S[i] = $[result}<br>";
 }
 // Display the result
 document.getElementById("result").innerHTML = table;
